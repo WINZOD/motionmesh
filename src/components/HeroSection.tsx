@@ -18,9 +18,12 @@ export const HeroSection = () => {
   const [textInput, setTextInput] = useState("");
   
   const handleGenerate = () => {
+    console.log("Generate button clicked! Input value:", textInput);
     if (textInput.trim()) {
       console.log("Generating 3D model for:", textInput);
       // TODO: Integrate with AI generation API
+    } else {
+      console.log("No text input provided");
     }
   };
 
@@ -105,11 +108,21 @@ export const HeroSection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="primary" size="lg" className="group">
+                <Button 
+                  variant="primary" 
+                  size="lg" 
+                  className="group"
+                  onClick={() => console.log("Start Creating clicked")}
+                >
                   Start Creating
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button variant="outline" size="lg" className="group">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="group"
+                  onClick={() => console.log("Watch Demo clicked")}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Watch Demo
                 </Button>

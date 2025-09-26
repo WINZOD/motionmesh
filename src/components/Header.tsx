@@ -43,10 +43,10 @@ export const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
+            <Button variant="ghost" size="sm" onClick={() => console.log("Sign In clicked")}>
               Sign In
             </Button>
-            <Button variant="primary" size="sm">
+            <Button variant="primary" size="sm" onClick={() => console.log("Get Started clicked")}>
               <Zap className="w-4 h-4 mr-2" />
               Get Started
             </Button>
