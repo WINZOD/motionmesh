@@ -3,47 +3,47 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* MotionMesh Design System - Professional 3D AI Platform */
+/* MotionMesh Design System - Professional Black & White 3D AI Platform */
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 225 25% 6%;
-    --background-secondary: 225 20% 8%;
-    --background-tertiary: 225 15% 12%;
-    --foreground: 220 10% 98%;
-    --foreground-secondary: 220 8% 85%;
-    --foreground-muted: 220 6% 65%;
+    /* Core Brand Colors - Black & White Theme */
+    --background: 0 0% 4%;
+    --background-secondary: 0 0% 8%;
+    --background-tertiary: 0 0% 12%;
+    --foreground: 0 0% 98%;
+    --foreground-secondary: 0 0% 85%;
+    --foreground-muted: 0 0% 65%;
 
-    /* Brand Colors */
-    --primary: 263 85% 65%;
-    --primary-glow: 263 100% 75%;
-    --primary-dark: 263 70% 50%;
-    --primary-foreground: 220 10% 98%;
+    /* Brand Colors - Monochrome */
+    --primary: 0 0% 100%;
+    --primary-glow: 0 0% 90%;
+    --primary-dark: 0 0% 80%;
+    --primary-foreground: 0 0% 4%;
     
-    --secondary: 195 85% 55%;
-    --secondary-glow: 195 100% 65%;
-    --secondary-foreground: 225 25% 6%;
+    --secondary: 0 0% 20%;
+    --secondary-glow: 0 0% 30%;
+    --secondary-foreground: 0 0% 98%;
     
-    --accent: 290 85% 70%;
-    --accent-glow: 290 100% 80%;
-    --accent-foreground: 220 10% 98%;
+    --accent: 0 0% 60%;
+    --accent-glow: 0 0% 70%;
+    --accent-foreground: 0 0% 4%;
 
-    /* UI Colors */
-    --card: 225 20% 10%;
-    --card-foreground: 220 10% 95%;
-    --card-border: 225 15% 16%;
+    /* UI Colors - Monochrome */
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+    --card-border: 0 0% 16%;
     
-    --popover: 225 20% 8%;
-    --popover-foreground: 220 10% 95%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
     
-    --muted: 225 15% 14%;
-    --muted-foreground: 220 6% 60%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 60%;
     
-    --border: 225 15% 18%;
-    --input: 225 15% 16%;
-    --input-focus: 225 20% 20%;
-    --ring: 263 85% 65%;
+    --border: 0 0% 18%;
+    --input: 0 0% 16%;
+    --input-focus: 0 0% 20%;
+    --ring: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 220 10% 98%;
@@ -54,22 +54,22 @@
     --warning: 45 85% 60%;
     --warning-foreground: 225 25% 6%;
 
-    /* Gradients */
+    /* Gradients - Monochrome */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     --gradient-secondary: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--primary-glow)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--secondary-glow)));
-    --gradient-glow: linear-gradient(135deg, hsl(var(--primary-glow) / 0.6), hsl(var(--accent-glow) / 0.4));
+    --gradient-glow: linear-gradient(135deg, hsl(var(--primary-glow) / 0.3), hsl(var(--accent-glow) / 0.2));
     
-    /* Shadows and Effects */
-    --shadow-sm: 0 2px 4px hsl(225 25% 3% / 0.4);
-    --shadow-md: 0 4px 12px hsl(225 25% 3% / 0.5);
-    --shadow-lg: 0 8px 32px hsl(225 25% 3% / 0.6);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
-    --shadow-accent-glow: 0 0 30px hsl(var(--accent-glow) / 0.4);
+    /* Shadows and Effects - Monochrome */
+    --shadow-sm: 0 2px 4px hsl(0 0% 0% / 0.4);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.5);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.2);
+    --shadow-accent-glow: 0 0 30px hsl(var(--accent-glow) / 0.3);
     
-    /* Glass Effect */
-    --glass-bg: hsl(225 20% 10% / 0.8);
-    --glass-border: hsl(225 15% 25% / 0.3);
+    /* Glass Effect - Monochrome */
+    --glass-bg: hsl(0 0% 8% / 0.8);
+    --glass-border: hsl(0 0% 25% / 0.3);
     --glass-blur: blur(12px);
     
     /* Animations */

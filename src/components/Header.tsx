@@ -19,9 +19,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center shadow-glow">
-              <Sparkles className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img 
+              src="/src/assets/motionmesh-logo.png" 
+              alt="MotionMesh" 
+              className="w-8 h-8 object-contain"
+            />
             <span className="text-xl font-bold text-foreground">MotionMesh</span>
             <Badge variant="secondary" className="hidden sm:inline-flex">
               AI Beta
